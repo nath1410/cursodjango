@@ -18,5 +18,5 @@ def index(request):
 		'''
 		return HttpResponse(formulario)
 
-def detail(request, id):
-	return HttpResponse('O id é: %s' % id) 
+def detail(request, username):
+	return HttpResponse('O username é: %s' % username) 

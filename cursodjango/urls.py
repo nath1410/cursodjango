@@ -7,7 +7,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^aula3/$', 'aula3.views.index', name='aula3_index')
+    url(r'^aula3/$', 'aula3.views.index', name='aula3_index'),
+	url(r'^aula3/(?P<username>[\w-]+)/$', 'aula3.views.detail', name='aula3_detail'),
 )
 
 if settings.DEBUG:
