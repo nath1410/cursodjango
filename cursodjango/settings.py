@@ -96,6 +96,12 @@ STATIC_ROOT = os.path.join(PROJECT_PATH, 'static')
 STATIC_URL = '/static/'
 
 
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+)
+
+
 TEMPLATE_DIR = (
     os.path.join(PROJECT_PATH, 'templates')
 )

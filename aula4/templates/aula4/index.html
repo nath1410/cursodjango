@@ -1,0 +1,16 @@
+{% if nome %}
+	<p>O nome é: {{ nome }}</p>
+{% endif %}
+
+{% if idade %}
+	<p>A idade é: {{ idade }}</p>
+{% endif %}
+
+{% if lista %}
+	{% for nome in lista %}
+		<p>O nome é: {{ nome }}</p>
+	{% endfor %}
+{%else%}
+	<p>Não tem lista</p>
+{% endif %}
+
