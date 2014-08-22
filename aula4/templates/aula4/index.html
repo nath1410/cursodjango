@@ -1,16 +1,9 @@
-{% if nome %}
-	<p>O nome é: {{ nome }}</p>
-{% endif %}
+{% extends 'aula4/base.html' %}
 
-{% if idade %}
-	<p>A idade é: {{ idade }}</p>
-{% endif %}
+{% block title %}Index da aula4{% endblock %}
 
-{% if lista %}
-	{% for nome in lista %}
-		<p>O nome é: {{ nome }}</p>
-	{% endfor %}
-{%else%}
-	<p>Não tem lista</p>
-{% endif %}
+{% block content %}
+<h1>Olá mundo</h1>
 
+<p>Sejam bem vindos ao curso django!</p>
+{% endblock %}

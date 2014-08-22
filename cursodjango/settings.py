@@ -43,7 +43,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'aula3',
-    'aula4'
+    'aula4',
+    'aula5',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -67,6 +68,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.mysql',
+        #'NAME': 'cursodjango',
+        #'USER': 'root',
+        #'PASSWORD': 'root', 
     }
 }
 
