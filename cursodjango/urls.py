@@ -11,6 +11,7 @@ urlpatterns = patterns('',
 	url(r'^aula3/(?P<username>[\w-]+)/$', 'aula3.views.detail', name='aula3_detail'),
     url(r'^aula4/$', 'aula4.views.index', name='aula4_index'),
     url(r'^aula4/home/$', 'aula4.views.home', name='aula4_home'),
+    url(r'^aula6/$', 'aula6.views.index', name='aula6_index'),
 )
 
 if settings.DEBUG:
